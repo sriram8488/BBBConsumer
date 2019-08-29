@@ -14,4 +14,7 @@ public class IntroScreeen extends SplashScreen{
 	  al.dismiss();
  */
   }
+  public void ram() {
+	  
+  }
 }

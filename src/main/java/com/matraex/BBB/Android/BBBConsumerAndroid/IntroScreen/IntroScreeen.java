@@ -9,12 +9,19 @@ public class IntroScreeen extends SplashScreen{
 	  driver.findElement(By.xpath("//android.widget.TextView[contains(@resource-id, 'txt_may_be_later') and @index='2']")).click();
   }
   public static void gpsEnable() {
-	  driver.findElement(By.xpath("//android.widget.Button[contains(@resource-id, 'button2') and @index='0']")).click();// android.widget.Button[contains(@resource-id, 'button1') and @index='1']
-	  /*Alert al = driver.switchTo().alert();
-	  al.dismiss();
- */
-  }
-  public void ram() {
+	  /*WebElement element= driver.findElement(By.xpath("//android.widget.Button[contains(@resource-id, 'button2') and @index='0']"));
+	  WebDriverWait wait= new WebDriverWait(driver, 30);
+	  wait.until(ExpectedConditions.visibilityOfElementLocated((By) element));
+	  element.click();*/
+	  //driver.findElement(By.xpath("//android.widget.Button[contains(@resource-id, 'button2') and @index='0']")).click();// android.widget.Button[contains(@resource-id, 'button1') and @index='1']
+	  //driver.findElement(By.xpath("//android.widget.Button[@text='NO']")).click();
+	  //driver.findElement(By.id("android:id/button2")).click();
+	  //driver.findElement(By.className("//android.widget.Button")).click();
+	  String actval=driver.findElement(By.id("android:id/message")).getText();
+	  System.out.println(actval);
+	  String expval="GPS is disabled in your device. Would you like to enable it?";
 	  
+ 
   }
+  
 }

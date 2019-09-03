@@ -16,7 +16,7 @@ public class NewTest1 {
   @Test
   public void clickOnNoGPSSearchButton() throws InterruptedException {
 	  IntroScreeen.gpsSearch();
-	  Thread.sleep(5000);
+	  Thread.sleep(10000);
   }
   @Test
   public void clickOnNoButtonForGps() {
